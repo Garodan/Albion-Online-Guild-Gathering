@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Haus Stark</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1000px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+      
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <ul class="nav nav-pills">
+        <li><a href="#login">Login</a></li>
+        <li><a href="#login">Registrieren</a></li>
+      </ul>
+      <h1>Haus Stark</h1>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#section1">Startseite</a></li>
+        <li><a href="#section2">Profil</a></li>
+        <li><a href="#section3">Abgabe</a></li>
+        <li><a href="#section3">Statistik</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Suche">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+
+    </div>
+
+    <!-- TODO könnte man dann mit einer Schleife aus der JSON Datei ausgeben lassen -->
+    <div class="col-sm-9">
+      <h3>Albion Online Gilden Gathering - Haus Stark</h3>
+      <hr>
+      <h4>Willkommen auf der Gildenseite von Haus Stark</h4>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Garodan, April 04, 2017.</h5>
+      <h5><span class="label label-success">News</span></h5>
+      <p>Diese Seite ist die Alpha Version für ein Gilden Tool, die jede Gilde für sich verwenden kann, um ihre Ressourcen einkünfte besser zu Überblicken.
+        Damit Spieler belohnt werden könne die viel für die Gilde tun. Diese Seite entsteht gemeinsam mit einem Kollegen aus der Uni.</p>
+      <p>Grüße Garodan und xXPOLYGONXx.</p>
+   </div>
+ </div>
+
+
+
+
+
+<!-- TODO muss noch nach ganz unten getan werden mit CSS-->
+<footer class="container-fluid">
+  <p>AGB'S</p>
+</footer>
+
+</body>
+</html>
