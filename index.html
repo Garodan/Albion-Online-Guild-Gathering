@@ -7,6 +7,7 @@
   <!-- Style -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -17,24 +18,25 @@
 </head>
 
 <body ng-app="myApp">
+
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
-      <ul class="nav nav-pills nav-stacked"></ul>
       <ul class="nav nav-pills nav-stacked">
         <center><h1>Haus Stark</h1><img class="img-responsive" src="images/house_stark_by_azraeuz-d61daf1.png" ></center>
         <li><a href="#/"><center>Startseite</center></a></li>
         <li><a href="#profil"><center>Profil</center></a></li>
         <li><a href="#gathering"><center>Gathering</center></a></li>
         <li><a href="#stats"><center>Statistik</center></a></li>
-      </ul>
+      </ul><br>
     </div>
-  </div>
+
   <!-- CONTENT -->
 <div class="col-sm-9">
   <div ng-view></div>
 </div>
   <!-- CONTENT -->
+</div>
 </div>
 
 <script>

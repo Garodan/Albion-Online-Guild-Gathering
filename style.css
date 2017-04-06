@@ -1,48 +1,25 @@
-.text {width: 70%;}
-;
-  }
-  .row.content {height: 1000px}
 
-  .sidenav {
-    padding-top: 0px;
-    height: 100%;
-    width: auto%;
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
 
-  }
-  /*footer {
-    padding-top: 100%;
-    background-color: #555;
-    color: white;
-    padding: 7px;
-  }*/
-  @media screen and (max-width: 767px) {
+    /* Set gray background color and 100% height */
     .sidenav {
-      height: auto;
+      background-color: rgba(#e90808, 1);
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
       padding: 15px;
     }
-    .row.content {height: auto;}
-  }
-  .profil{
-    padding-top: 100px;
-  }
-  .footer-bottom {
-    background-color: #15224f;
-    min-height: 30px;
-    width: 100%;
-}
-.copyright {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-}
-.design {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-    text-align: right;
-}
-.design a {
-    color: #fff;
-}
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
