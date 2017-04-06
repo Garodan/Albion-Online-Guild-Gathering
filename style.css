@@ -9,11 +9,12 @@
     width: auto%;
 
   }
-  footer {
+  /*footer {
+    padding-top: 100%;
     background-color: #555;
     color: white;
     padding: 7px;
-  }
+  }*/
   @media screen and (max-width: 767px) {
     .sidenav {
       height: auto;
@@ -21,3 +22,27 @@
     }
     .row.content {height: auto;}
   }
+  .profil{
+    padding-top: 100px;
+  }
+  .footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}

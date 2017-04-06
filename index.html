@@ -1,12 +1,20 @@
+<!-- Webseite für die Uni
+- spätere Weiterentwicklung
+Author: Jamie Schneker und Can Kalkan
+Modul: Webentwicklung
+Dozent: Robin Bedemann -->
+
 <!DOCTYPE html>
 <html ng-app="guildsApp">
 <head>
   <title>Haus Stark</title>
   <meta charset="utf-8" lang="de">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Style -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
@@ -46,11 +54,11 @@
 
     <div ng-controller="NewsCtrl">
       <div class="col-sm-9 mainpage" ng-repeat="new in news | filter:search">
-        <h4>{{new.ueberschrift}}</h4>
-        <h5><span class="glyphicon glyphicon-time"></span> Post by {{new.postdate}}.</h5>
-        <h5><span class="label label-success">{{new.label}}</span></h5>
-        <p class="text">{{new.text}}</p>
-        <p>{{new.end}}</p>
+        <h4><b>{{new.ueberschrift}}</b></h4>
+        <span class="glyphicon glyphicon-time"></span>Post by {{new.postdate}}.
+        <span class="label label-success">{{new.label}}</span></br>
+        <h4><p class="text">{{new.text}}</p></h4>
+        <p><i>{{new.end}}</i></p>
         <br>
       </div>
     </div>
@@ -58,9 +66,21 @@
 </div>
 
 <!-- TODO muss noch nach ganz unten getan werden mit CSS-->
-<footer class="footer">
-  <p>AGB'S</p>
-</footer>
-
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="copyright">
+          © 2017, Garodan and xXPOLYGONXx, Open Source no rights reserved
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="design">
+          <a href="#">Albion Online </a> |  <a target="_blank" href="http://www.google.de">Google.de</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
