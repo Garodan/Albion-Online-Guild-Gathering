@@ -52,6 +52,12 @@ app.controller('PlayerCtrl', function($scope, $http){
     $scope.players = playersResponse.data;
   });
 });
+app.controller('StatsCtrl', function($scope, $http){
+  $http.get('gathering.json').then(function(gatheringsResponse) {
+    $scope.gahterings = gatheringsResponse.data;
+  });
+});
+
 
 app.config(function($routeProvider) {
     $routeProvider .when("/", {
