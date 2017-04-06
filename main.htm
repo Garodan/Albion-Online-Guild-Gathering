@@ -1,0 +1,23 @@
+
+  <h3>Albion Online Gilden Seite</h3>
+  <hr>
+</div>
+
+<div ng-controller="NewsCtrl">
+  <div class="col-sm-9 mainpage" ng-repeat="new in news | filter:search">
+    <h4><b>{{new.ueberschrift}}</b></h4>
+    <span class="glyphicon glyphicon-time"></span>Post by {{new.postdate}}.
+    <span class="label label-success">{{new.label}}</span></br>
+    <h4><p class="text">{{new.text}}</p></h4>
+    <p><i>{{new.end}}</i></p>
+    <br>
+  </div>
+
+<script>
+var app = angular.module('myApp',[])
+  app.controller('NewsCtrl', function($scope, $http){
+    $http.get('news.json').then(function(newsResponse) {
+      $scope.news = newsResponse.data;
+    });
+  });
+</script>
