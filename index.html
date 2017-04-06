@@ -47,6 +47,11 @@ app.controller('NewsCtrl', function($scope, $http){
     $scope.news = newsResponse.data;
   });
 });
+app.controller('PlayerCtrl', function($scope, $http){
+  $http.get('profil.json').then(function(playersResponse) {
+    $scope.players = playersResponse.data;
+  });
+});
 
 app.config(function($routeProvider) {
     $routeProvider .when("/", {

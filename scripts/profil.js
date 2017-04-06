@@ -9,11 +9,20 @@ function entryfield() {
     item: item,
     count: quantity
    };
+<<<<<<< HEAD
    var app = angular.module("myapp2", ["ngRoute"]);
    app.controller('gatheringCtrl', function($scope, $http){
    $http.post(data).then(function(newsResponse) {
     $scope.news = newsResponse.data;
   });
+=======
+   var fs = require('fs');
+   fs.writeFile('gathering.json', data, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+>>>>>>> origin/master
 });
 
 
