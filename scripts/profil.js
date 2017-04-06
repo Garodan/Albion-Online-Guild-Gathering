@@ -3,17 +3,18 @@ var i = 1;
 function entryfield() {
 
    var objTo = document.getElementById('entryfield');
+   var item = document.getElementById('item');
+   var quantity = document.getElementById('quantity');
    var data = {
-    item: objto.item,
-    count: objTo.quantity
+    item: item,
+    count: quantity
    };
-   var fs = require('fs');
-   fs.writeFile("/gathering.json", data, function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    console.log("The file was saved!");
-}); 
+   var app = angular.module("myapp2", ["ngRoute"]);
+   app.controller('gatheringCtrl', function($scope, $http){
+   $http.post(data).then(function(newsResponse) {
+    $scope.news = newsResponse.data;
+  });
+});
 
 
     i++;

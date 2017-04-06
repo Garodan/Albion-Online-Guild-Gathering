@@ -1,0 +1,11 @@
+<?php 
+$file = fopen("gathering.json", "r") or die("Unable to open file!");
+$filea = json_decode($file);
+$itemcount = 0;
+foreach($filea as &$value)
+{
+    $itemcount++;
+}
+?>
+<h3>Es sind insgesamt <?php echo($itemcount);?> verschiedene Arten von Items in der Liste</h3>
+<h3>Es sind insgesamt <?php echo("33"); ?> Items in der Liste</h3>
