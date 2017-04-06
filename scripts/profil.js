@@ -2,8 +2,22 @@
 var i = 1;
 function entryfield() {
 
+   var objTo = document.getElementById('entryfield');
+   var data = {
+    item: objto.item,
+    count: objTo.quantity
+   };
+   var fs = require('fs');
+   fs.writeFile("/gathering.json", data, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+}); 
+
+
     i++;
-    var objTo = document.getElementById('entryfield')
+    var objTo = document.getElementById('entryfield');
     var div = document.createElement("div");
 	div.setAttribute("class", "form-group removeitem"+i);
 	var rdiv = 'removeitem'+i;
