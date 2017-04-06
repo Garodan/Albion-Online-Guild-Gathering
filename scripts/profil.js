@@ -8,12 +8,12 @@ function entryfield() {
     count: objTo.quantity
    };
    var fs = require('fs');
-   fs.writeFile("/gathering.json", data, function(err) {
+   fs.writeFile('gathering.json', data, function(err) {
     if(err) {
         return console.log(err);
     }
     console.log("The file was saved!");
-}); 
+});
 
 
     i++;
