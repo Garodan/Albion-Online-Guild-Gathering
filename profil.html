@@ -24,10 +24,10 @@
         </center>
 
         <ul class="nav nav-pills nav-stacked">
-          <li><a href="#/index.html"><center>Startseite</center></a></li>
-          <li><a href="#/profil.html"><center>Profil</center></a></li>
-          <li><a href="#/abgabe"><center>Abgabe</center></a></li>
-          <li><a href="#/stats"><center>Statistik</center></a></li>
+          <li><a href="#"><center>Startseite</center></a></li>
+          <li><a href="#"><center>Profil</center></a></li>
+          <li><a href="#"><center>Abgabe</center></a></li>
+          <li><a href="#"><center>Statistik</center></a></li>
         </ul>
         <br>
         <div class="input-group">
@@ -44,16 +44,7 @@
       <hr>
     </div>
 
-    <div ng-controller="NewsCtrl">
-      <div class="col-sm-9 mainpage" ng-repeat="new in news | filter:search">
-        <h4>{{new.ueberschrift}}</h4>
-        <h5><span class="glyphicon glyphicon-time"></span> Post by {{new.postdate}}.</h5>
-        <h5><span class="label label-success">{{new.label}}</span></h5>
-        <p class="text">{{new.text}}</p>
-        <p>{{new.end}}</p>
-        <br>
-      </div>
-    </div>
+    Hallo
   </div>
 </div>
 
